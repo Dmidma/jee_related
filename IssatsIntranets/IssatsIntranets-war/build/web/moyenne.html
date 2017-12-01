@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+        .line {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .after {
+            position: relative;
+            left: 50px
+        }
+        </style>
+    </head>
+    <body>
+        <form action="/CalculeMoyenneMatiereCliente" method="POST">
+            <div class="line">Note DS</div><input name="noteDS" type="text" required/>
+            <br/>
+            <br/>
+            <div class="line">Note TP</div><input name="noteTP" type="text" required/>
+            <br/>
+            <br/>
+            <div class="line">Note Examen</div><input name="noteEX" type="text" required/>
+            <br/>
+            <br/>
+            <div class="line">Option d'appel</div><select name="appel"><option value="local">EJB local</option><option value="distant">EJB distant</option></select>
+            <input type="submit" placeholder="Calculer"/>
+        </form>
+    </body>
+</html>

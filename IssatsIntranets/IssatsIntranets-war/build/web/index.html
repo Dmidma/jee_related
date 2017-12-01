@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <style>
+        .line {
+            display: inline-block;
+            margin-right: 15px;
+        }
+        .after {
+            position: relative;
+            left: 50px
+        }
+    </style>
+    <body>
+        <header><h2>Inscription à ISSAT Intranet</h2></header>
+        <br/>
+        <br/>
+        <form action="/IssatsIntranets-war/Inscription" method="POST">
+            <div class="line">Nom</div><input name="Nom" type="text" required/>
+            <br/>
+            <br/>
+            <div class="line">Prenom</div><input name="Prenom" type="text" required/>
+            <br/>
+            <br/>
+            <div class="line">CIN</div><input name="CIN" type="text" required/>
+            <br/>
+            <br/>
+            <div class="line">Groupe</div><input name="Groupe" type="text" required/>
+            <br/>
+            <br/>
+            <div class="line">Genre</div><select name="Genre"><option value="Male">Male</option><option value="Female">Female</option></select>
+            <br/>
+            <br/>
+            <div class="line">Login</div><input name="Login" type="text" required/>
+            <br/>
+            <br/>
+            <div class="line">Mot de passe</div><input name="Passe" type="password" required/>
+            <br/>
+            <br/>
+            <input type="submit" placeholder="Inscription"/>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>CalculeMoyenneMatiereClient</servlet-name>
+        <servlet-class>.CalculeMoyenneMatiereClient</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CalculeMoyenneMatiereCliente</servlet-name>
+        <servlet-class>calculeMatiere.CalculeMoyenneMatiereCliente</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>add</servlet-name>
+        <servlet-class>cours.add</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CalculeMoyenneMatiereClient</servlet-name>
+        <url-pattern>/CalculeMoyenneMatiereClient</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CalculeMoyenneMatiereCliente</servlet-name>
+        <url-pattern>/CalculeMoyenneMatiereCliente</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>add</servlet-name>
+        <url-pattern>/cours/add</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            50
+        </session-timeout>
+    </session-config>
+</web-app>
